@@ -1,7 +1,7 @@
 package com.grupo7.studentsrepo.model.entity;
 
-import com.grupo7.studentsrepo.model.enums.CategoriaDocumento;
-import com.grupo7.studentsrepo.model.enums.EstadoDocumento;
+import com.grupo7.studentsrepo.model.enums.CategoriaProyecto;
+import com.grupo7.studentsrepo.model.enums.EstadoProyecto;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -18,12 +18,12 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Table(name = "documentos")
+@Table(name = "proyectos")
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Documento extends BaseEntity {
+public class Proyecto extends BaseEntity {
 
     @Column(name = "titulo", nullable = false, length = 200)
     private String titulo;
@@ -33,11 +33,11 @@ public class Documento extends BaseEntity {
 
     @Enumerated(EnumType.STRING)
     @Column(name = "categoria", nullable = false, length = 30)
-    private CategoriaDocumento categoria;
+    private CategoriaProyecto categoria;
 
     @Enumerated(EnumType.STRING)
     @Column(name = "estado", nullable = false, length = 20)
-    private EstadoDocumento estado = EstadoDocumento.PENDIENTE;
+    private EstadoProyecto estado = EstadoProyecto.PENDIENTE;
 
     @Column(name = "nombre_archivo", nullable = false, length = 255)
     private String nombreArchivo;

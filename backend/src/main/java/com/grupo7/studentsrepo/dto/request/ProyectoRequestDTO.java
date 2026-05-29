@@ -1,6 +1,6 @@
 package com.grupo7.studentsrepo.dto.request;
 
-import com.grupo7.studentsrepo.model.enums.CategoriaDocumento;
+import com.grupo7.studentsrepo.model.enums.CategoriaProyecto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -12,13 +12,13 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 
-public class DocumentoRequestDTO {
+public class ProyectoRequestDTO {
 
     private String titulo;
 
     private String descripcion;
 
-    private CategoriaDocumento categoria;
+    private CategoriaProyecto categoria;
 
     private String nombreArchivo;
 

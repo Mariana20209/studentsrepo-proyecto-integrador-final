@@ -1,7 +1,7 @@
 package com.grupo7.studentsrepo.dto.response;
 
-import com.grupo7.studentsrepo.model.enums.CategoriaDocumento;
-import com.grupo7.studentsrepo.model.enums.EstadoDocumento;
+import com.grupo7.studentsrepo.model.enums.CategoriaProyecto;
+import com.grupo7.studentsrepo.model.enums.EstadoProyecto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -13,7 +13,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 
-public class DocumentoResponseDTO {
+public class ProyectoResponseDTO {
 
     private Long id;
 
@@ -21,9 +21,9 @@ public class DocumentoResponseDTO {
 
     private String descripcion;
 
-    private CategoriaDocumento categoria;
+    private CategoriaProyecto categoria;
 
-    private EstadoDocumento estado;
+    private EstadoProyecto estado;
 
     private String nombreArchivo;
 

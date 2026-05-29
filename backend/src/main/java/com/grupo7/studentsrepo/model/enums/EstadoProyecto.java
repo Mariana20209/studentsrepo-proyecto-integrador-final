@@ -1,6 +1,6 @@
 package com.grupo7.studentsrepo.model.enums;
 
-public enum EstadoDocumento {
+public enum EstadoProyecto {
 
     PENDIENTE,
     APROBADO,
