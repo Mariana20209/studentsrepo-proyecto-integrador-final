@@ -48,7 +48,8 @@ function Acceso() {
 
       alertaRedireccion("Error", "Usuario o contraseña incorrectos", "/acceso", "error")
 
-    } catch {
+    } catch (error) {
+      console.error("Error real del login:", error)
       alertaRedireccion("Error", "No se pudo conectar con el servidor", "/acceso", "error")
     } finally {
       setCargando(false)

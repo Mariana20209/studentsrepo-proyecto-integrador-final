@@ -6,10 +6,13 @@ import Proyectos from "../pages/Proyectos"
 import Estudiantes from "../pages/Estudiantes"
 import Administracion from "../pages/Administracion"
 import RutaProtegida from "../pages/RutaProtegida"
+import Analytics from "../pages/Analytics"
 
 export const routerApp = [
   { path: "/", element: <Inicio /> },
   { path: "/acceso", element: <Acceso /> },
+  { path: "/analytics", element: <Analytics /> },
+
   {
     path: "/panel",
     element: (

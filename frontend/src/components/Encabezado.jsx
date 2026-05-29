@@ -46,8 +46,17 @@ const Encabezado = () => {
       </Link>
 
       <nav style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
-        <Link to="/" style={estiloEnlace('/')}>Inicio</Link>
-        <Link to="/panel" style={estiloEnlace('/panel')}>Proyectos</Link>
+        <Link to="/" style={estiloEnlace('/')}>
+          Inicio
+        </Link>
+
+        <Link to="/panel" style={estiloEnlace('/panel')}>
+          Proyectos
+        </Link>
+
+        <Link to="/analytics" style={estiloEnlace('/analytics')}>
+          Analisis
+        </Link>
       </nav>
 
       <div style={{ display: 'flex', gap: '12px', alignItems: 'center' }}>
