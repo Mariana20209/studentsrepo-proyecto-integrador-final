@@ -28,7 +28,7 @@ function Administracion() {
     }
 
     const cambiarEstado = (proyecto, nuevoEstado) => {
-        fetch(`http://localhost:3002/proyectos/${proyecto.id}`, {
+        fetch(`https://studentsrepo-backend.onrender.com/api/proyectos/${proyecto.id}`, {
             method: "PUT",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ ...proyecto, estado: nuevoEstado })
@@ -60,7 +60,7 @@ function Administracion() {
             Swal.fire("Campos vacíos", "Completa todos los campos", "warning")
             return
         }
-        fetch(`http://localhost:3002/proyectos/${proyectoEditar.id}`, {
+        fetch(`https://studentsrepo-backend.onrender.com/api/proyectos/${proyectoEditar.id}`, {
             method: "PUT",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ ...proyectoEditar, ...formularioEditar, estado: "Pendiente" })

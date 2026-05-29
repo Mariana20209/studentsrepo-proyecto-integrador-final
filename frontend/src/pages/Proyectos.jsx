@@ -44,7 +44,7 @@ function Proyectos() {
       fecha: new Date().toISOString().split("T")[0],
     }
 
-    fetch("http://localhost:3002/proyectos", {
+    fetch("https://studentsrepo-backend.onrender.com/api/proyectos", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(nuevoProyecto)

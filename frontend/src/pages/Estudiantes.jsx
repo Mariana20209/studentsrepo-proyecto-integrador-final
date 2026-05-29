@@ -6,7 +6,7 @@ function Estudiantes() {
   const [busqueda, setBusqueda] = useState("")
 
   useEffect(() => {
-    fetch("http://localhost:3002/usuarios")
+    fetch("https://studentsrepo-backend.onrender.com/api/usuarios")
       .then((res) => res.json())
       .then((datos) => {
         setEstudiantes(datos.filter(u => u.role === 'estudiante'))

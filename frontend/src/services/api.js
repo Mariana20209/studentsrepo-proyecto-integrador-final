@@ -1,6 +1,6 @@
-const URL_BASE = "http://localhost:3002/"
+const URL_BASE = "https://studentsrepo-backend.onrender.com"
 
 export const puntos_finales = {
-  usuarios: `${URL_BASE}usuarios`,
-  proyectos: `${URL_BASE}proyectos`,
+  usuarios: `${URL_BASE}/api/usuarios`,
+  proyectos: `${URL_BASE}/api/proyectos`,
 }
